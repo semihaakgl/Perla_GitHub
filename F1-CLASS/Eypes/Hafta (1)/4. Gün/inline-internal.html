@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline and internal css</title>
+    <!-- *text-align: center; elementleri ortalar. -->
+    <style>
+        img{
+            width: 50%;
+            border: 2px solid red;
+            border-radius: 50%;
+        }
+
+        .img-div{
+            text-align: center;
+        }
+        #sem{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+     <!-- 
+   * Inline CSS, HTML elementlerine style keyword'u ile eklenir.
+   * style kelimesinin ici aslinda CSS alanidir.
+   * Sadece eklenen element icin bir stillendirme gerceklestirir.
+   * Bu sebeple cok pratik bir yontem degildir.
+   * HTML kodlarini kalabaliklastirdigi icin kodun gorunumunu karmasiklastirir.
+ -->
+    <!--isimlendirme = propery:volue
+                        özellik:değer
+                        color:red-->
+    <h1 style="color:blue;">USING CSS</h1>
+
+    <h2 style="color: rgb(235, 6, 6);">Lorem, ipsum dolor.</h2>
+
+    <!-- <div class="img-div"> -->
+        <img src="https://cdn1.ntv.com.tr/gorsel/hOmTxgKVoEKas69f0JRoww.jpg?width=1000&mode=both&scale=both&v=1566294029181" alt="">
+        </div>
+
+        <div class="img-div">
+        <img src="https://ocakmedya.com/wp-content/uploads/2022/10/0x0-dunyadan-muhtesem-doga-manzaralari-1512736354182.jpg" alt="">
+    </div>
+    <div id="sem">
+        <img src="https://www.folyosepeti.com/duvar-poster-doga-100419445-mykagitcim-duvar-posterleri-doga-13607-12-B.jpg" alt="">
+    </div>
+
+</body>
+</html>

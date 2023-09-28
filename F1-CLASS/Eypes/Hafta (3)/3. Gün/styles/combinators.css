@@ -1,0 +1,77 @@
+*{
+
+}
+COMBİNATORS
+/* 1.Descendent Selector( boşluk ile temsil eder ): (div p ): div içerisindeki p leri alır.
+/* 2.Child Selector(>): (div > p): div perıntı içindeki  p leri alır*/
+/* 3.General sibling selector(+): (div + p) div den sonra gelen  ilk p alır*/
+/* 4.Tilda selector:(~): (div ~ p)  divden sonra gelen tüm p leri seçer*/
+
+
+ /* *******combinators******** */
+
+/* div  p{
+div in altındaki bütün p leri kapsar
+} */
+
+/* div > p{
+    div in altındaki bütün p leri kapsar
+} */
+
+/* div + p{
+    div den sonra gelen ilk p yi kapsar
+} */
+
+/* div ~ p{
+    div den sonra gelen bütün p leri alır
+} */
+
+/* *****descendent selector***** */
+
+.box h1{ 
+    /* box class ı içindeki tüm h1 leri seçer */
+    color: red;
+}
+
+
+ /* *****child selector**** */
+
+ .box > p {
+    color: blue;
+ }
+
+ section > p {
+    color: aqua;
+ }
+
+ /* ****general sibling selector*** */
+
+ .box + p {
+    color: chartreuse;
+    background-color: black;
+    /* box elementi kapandıktan sonraki ilk p elementini kapsar */
+ }
+
+ .box ~ p {
+    background-color:blue;
+    /* box elementinden sonraki bütün p leri seçer */
+ }
+
+ .box ~ .p1{
+    background-color: darkmagenta;
+
+ }
+ .p1 + h1{
+    /* outline: 2px solid red; */
+    font-size: 1rem;
+    width: 8rem;
+    height: 8rem;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 3.3rem;
+ }
+ .p1 + h1:hover{
+outline: 5px solid red;
+outline-offset: 10px;
+ }

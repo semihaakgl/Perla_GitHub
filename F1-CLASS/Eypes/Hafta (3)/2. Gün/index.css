@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+
+
+header{
+    padding: 20px;
+    line-height: 36px;
+   /* line-height = header içerisindeki elementlerin yüksekliğine  eşit şekilde mesafe verir.yani ip gibi dizme yöntemi */
+
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    color: black;
+    padding: 0.5rem;
+}
+
+ul li a:hover{
+    text-decoration: underline;
+    /* hover codu yazının üzerine geldiğinde altını çizer.  */
+}
+.header__left{
+    float: left;
+}
+.header__right{
+    float: right;
+}
+.header__right--oppicon{
+    opacity: 0.5;
+     /*icona solgun renk verir.*/
+    vertical-align: middle;
+     /* iconları hizalar */
+     
+}
+.header__right--oppicon:hover{
+    opacity: 1;
+    /* mause ile üzerine geldiğinde koyu renk verir. */
+    cursor: pointer;
+    /* mause ile üzerine geldiğinde parmak işareti gösterir. */
+
+}
+.header__right--button{
+        background-color: #4285F4;
+        color: white;
+        height: 30px;
+        width: 70px;
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .main{
+        margin-top: 200px;
+        text-align: center;
+    }
+.main__logo{
+    height: 95px;
+    width: 272px;
+}
+.main__searchbar{
+    border: 1px solid #d3d3d3;
+    height: 38px;
+    width: 460px;
+    border-radius: 25px;
+    margin: 20px auto; 
+}
+.main__searchbar:hover{
+    box-shadow: rgb(211, 211, 211) 3px 3px 5px;
+
+}
+.main__searchbar--magnifier{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+ .main__searchbar--input{
+    height: 25px ;
+    width: 350px;
+    border: none ;
+    font-size: 14px;
+    outline: none ;
+    vertical-align: middle;
+ }
+ .main__searchbar--mic{
+    height: 20px;
+    width: 15px;
+    cursor: pointer;
+    vertical-align: middle;
+ }
+ .main__buttons--left,
+ .main__buttons--right{
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    padding: 1px 6px;
+    margin: 10px 3px;
+ }
+ .main__buttons--right:hover,
+ .main__buttons--left:hover{
+    cursor: pointer;
+    border: 1px solid #4285F4;
+ }
+ .main__lang{
+    margin-top: 20px;
+ }
+ .main__lang a{
+    text-decoration: underline;
+ }
+ .footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #d3d3d3;
+    width: 100%;
+    line-height: 40px;
+ }
+ .footer__top{
+    padding-left: 20px;
+    border-bottom: 1px solid #e4e4e4;
+ }
+
+ .footer__bottom--left{
+    float: left;
+    padding-left: 20px;
+ }
+ .footer__bottom--right{
+    float: right;
+    padding-right: 20px;
+ }

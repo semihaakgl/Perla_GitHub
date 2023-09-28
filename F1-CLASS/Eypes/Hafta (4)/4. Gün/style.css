@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    max-width: 100%;
+  }
+  header {
+    display: flex;
+    background-color: black;
+    padding: 1.5rem;
+    color: white;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: space-around;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  nav.right {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    /* flex-basis: 32%; */
+  }
+  nav.right a {
+    padding: 0.7rem;
+    width: 100%;
+  }
+  .right section {
+    display: flex;
+    gap: 0.7rem;
+    width: 100%;
+  }
+  nav.left {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  nav.center {
+    font-size: 1.8rem;
+  }
+  .left a {
+    transition: 2s
+  }
+  .left a.a:hover {
+    transform: rotateX(360deg);
+  }
+  .left a.b:hover {
+    transform: rotateY(360deg);
+  }
+  .left a.c:hover {
+    transform: rotateZ(3600deg);
+  }
+  .center:hover{
+    animation-name: example11;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+  }
+  @keyframes example11 {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(0.5);
+    }
+    50% {
+      transform: scale(2);
+    }
+    75% {
+      transform: scale(1);
+    }
+  }
+
+  .right .d:hover{
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+  }
+  @keyframes example{
+    0%{
+        transform: scale(2);
+    }
+    12.5%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(2);
+    }
+    37.5%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    75%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2);
+    }
+  }
+
+  .right .e:hover {
+    animation-name: example2;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+  }
+  @keyframes example2 {
+    0% {
+      color: red;
+    }
+    25% {
+      color: yellow;
+    }
+    50% {
+      color: blue;
+    }
+    75% {
+      color: green;
+    }
+    100% {
+      color: red;
+    }
+  }
+  .right .f:hover {
+    animation-name: example3;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+  }
+  @keyframes example3 {
+    0% {
+      background-color: #fff;
+      color: #000
+    }
+    50% {
+      background-color: #000;
+      color: #fff
+    }
+    100% {
+      background-color: #fff;
+      color: #000
+    }
+  }
+
+  .fa-solid.fa-basket-shopping::after{
+    content: "5";
+    color: #fff;
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+    padding: 0.3rem;
+    background-color: red;
+    border-radius: 50%;
+  }
+
+  main section{
+    padding: 2rem;
+    text-align: justify;
+  }
+
+  footer{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+
+  }
+
+  footer section{
+    flex: 1;
+  }
+
+  section p{
+    text-align: justify;
+  }
+
+footer section a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .footer1{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  section span{
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 1200px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    nav.right a{
+        padding-left: 0;
+        max-width: 100%;
+    }
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    nav.right{
+        display: flex;
+        flex-direction: column;
+
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    nav{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    nav.right section a{
+        padding-left: 3rem;
+
+    }
+
+    nav.right section {
+       display: flex;
+       justify-content: center; 
+    }
+    nav.right a.f{
+        padding-left: 2.5rem;
+    }
+    footer div{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        width: 100%;
+    }
+    section, section span
+  }

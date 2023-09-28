@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* *******HEADER********* */
+body{
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    padding: 1rem;
+    background-image: linear-gradient( 58.2deg,  rgba(40,91,212,0.73) -3%, rgba(171,53,163,0.45) 49.3%, rgba(255,204,112,0.37) 97.7% );
+}
+
+header a img{
+    width: 60px;
+}
+header section.logins{
+    float: right;
+    /* float: right; CSS özelliği, bir HTML öğesini sağa doğru kaydırmak veya sarmak için kullanılan bir özelliktir. Bu özellik, özellikle sayfa üzerinde metin veya resimleri yan yana sıralamak veya sayfanın içeriğini düzgün bir şekilde yerleştirmek için kullanılır. */
+    padding-top: 1.6rem;
+    padding-right: 0.7rem;
+    
+}
+header .logins a{
+    color: red;
+    text-decoration:none;
+    /* text-decoration: none; CSS özelliği, bir metin öğesinin üzerine eklenmiş olan herhangi bir metin süslemesini (örneğin, bağlantıların altını çizme veya üzerine çizgi çizme) kaldırmak için kullanılır. */
+    font-weight: 900;
+}
+header .logins a:hover{
+    /* Hover efektleri bir öğenin rengini değiştirme, üzerine gelindiğinde bir alt başlık gösterme, öğenin boyutunu veya konumunu değiştirme gibi çeşitli şekillerde gerçekleştirilebilir. */
+    border-bottom: 2px solid #760202;
+}
+nav.sticky{
+    text-align: center;
+    padding: 2rem;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    position: sticky;
+    top: 0rem;
+    z-index: 1;
+}
+nav.sticky a{
+    font-family: 'DynaPuff', cursive;
+    text-decoration: none;
+    color: black;
+    margin-right: 0.9rem;
+}
+nav.sticky a:hover{
+    color: white;
+}
+
+/* Özellik position, bir öğe için kullanılan konumlandırma yönteminin türünü belirtir.
+
+Beş farklı konum değeri vardır:
+
+static
+relative
+fixed
+absolute
+sticky */
+
+nav.banner{
+    position: relative;
+}
+nav.banner img{
+    width: 100%;
+}
+nav.banner .hero{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+nav.banner .hero h2{
+    color: white;
+    font-size: 3rem;
+} */
+nav.banner .hero h3{
+    color: red;
+    margin-bottom: 0.5rem;
+}
+nav.banner .hero button{
+    background-color: #D9AFD9;
+        padding: 0.7rem;
+        border-radius: 10px;
+        font-weight: 700;
+}
+nav.banner .hero button:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+main{
+    padding: 2rem;
+    text-align: justify;
+}
+
+
+section.slack{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.4rem;
+    font-size: 2rem;
+    text-align: center;
+    
+}
+section.slack:hover{
+    cursor: pointer;
+    outline: 3px solid red;
+    outline-offset: 5px;
+    color: black;
+} 

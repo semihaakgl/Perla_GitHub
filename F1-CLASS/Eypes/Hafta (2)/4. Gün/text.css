@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    /* *default font-size :16px * */
+    font-size: 20px;
+    /* *default font-size :20px * */
+}
+h1{
+    /* *default font-size ı her zaman html*2 * */
+    color: red;
+
+}
+p.first{
+    font-size: 30px;
+}
+/**  ******* UNIST*********/
+p.abs{
+    font-size: 20px;
+    /* font-size: 1cm; */
+    margin-bottom: 10px;
+}
+p.percent {
+font-size: 200%;
+/* *16px default değer *2=32px* */
+}
+/* *em olcu biriminde bir html elemanının font-size ı parentin font-size ına göre oranlanır.* */
+.div1{
+    font-size: 1em;
+}
+.div2{
+    font-size: 2em;
+}
+.div3{
+    font-size: 3em;
+}
+.div4{
+    font-size: 1rem;
+}
+.div5{
+    font-size: 2rem;
+}
+.div6{
+    font-size: 3rem;
+}
+/******** TEXT STYLE********/
+.text-style{font-style: italic;
+    font-style: oblique;
+    text-align:justify;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+p.text-style span.elit{
+color: red;
+/* *decoration* */
+text-decoration: line-through;
+/* *tam üzerine çizgi demek* */
+text-decoration: overline;
+/* *altı çizgili demek* */
+ text-decoration: underline;
+ /* *altı çizgili demek* */
+ text-decoration: none;
+ /* * çizgi yok demek* */
+}
+
+    div.transform{
+        font-size: 1.2rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-transform: capitalize;
+        /* *ilk harfler büyük* */
+        text-transform: uppercase;
+        /* *tamamı büyük harfler* */
+        text-transform: lowercase;
+        /* *tamamı küçük harfler* */
+        text-transform: none;
+        /* *transform yok default hali* */
+    }
+    div.transform p.indent{
+        text-indent: 30px;
+        /* *girinti mesafesi ya da paragraf boşluğu* */
+    }
+    div.transform p.space{
+        line-height: 1.5;
+        /* *satır yüksekliği* */
+        word-spacing: 2rem;
+        /* *kelimeler arası boşluk* */
+        letter-spacing: 10px;
+        /* *harfler arası boşluk* */
+        direction: ;
+    }
+    div.transform p.direc{
+        direction: rtl;
+        /* *yazım yönü* */
+    }
+    .shadow{
+        padding: 1rem;
+        margin-bottom: 2rem;
+        box-shadow: 3px 5px 10px red;
+    }
+    .shadow h2{
+        text-shadow: 3px 3px 10px blue;
+    }

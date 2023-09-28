@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fixed{
+    background-color: cadetblue;
+    position: fixed;
+    left: 0.5;
+    bottom: 15rem;
+}
+.sticky{
+    position: sticky;
+    background-color: yellow;
+    top: 1rem;
+    bottom: 20px;
+}

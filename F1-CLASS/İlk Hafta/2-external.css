@@ -1,0 +1,46 @@
+*{
+    background-color: azure;
+}
+
+h1{
+    color: brown;
+}
+
+h1:hover{
+    opacity: 0.5;
+    color: blue;
+    cursor: pointer;
+    background-color: aqua;
+}
+
+li{
+    color: blueviolet;
+    list-style-type:lower-roman;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.list{
+    border:2px solid red ;
+}

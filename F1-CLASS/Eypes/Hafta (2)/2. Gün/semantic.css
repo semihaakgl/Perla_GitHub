@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+header{
+    padding: 40px;
+    background-color: red;
+    color: white;
+    font-size: 30px;
+}
+nav{
+    background-color: hsla(76, 96%, 49%, 0.984);
+    /* background-color: #ff00fffb; */
+    padding: 20px;
+    font-size: 20px;
+    color: aliceblue;
+}
+nav a{
+    color: red;
+    text-decoration: underline;
+    /* */ alt çizgi */
+    /* text-decoration: overline;
+    /* */ üst çizgi */
+    /* text-decoration: line-through;*/ üzerine çizgi */
+    /* text-decoration: dotted; */ */
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+h2{
+    margin: 20px 0;
+}
+figcaption{
+    margin-bottom: 30px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 2rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    background-color: antiquewhite;
+    padding: 1rem;
+  
+    /*? Dikey hizalamayi gostermek icin eklendi*/
+    /* height: 20rem; */
+  
+    display: flex;
+    /*! Elemanların dizilis yonu : column, row, row-reverse, column-reverse*/
+    flex-direction: row;
+    /*? gap, flex icerisindeki elemanlarin dikey ve yatay bosluklarini belirlemek icin kullanilabilir.
+    //*? ilk yazilan yatay (satilar arasi) bosluk, 2. yazilan ise dikey (sutunlar arasi) bosluktur */
+    gap: 1rem 0.5rem;
+  
+    /*? sikistirma veya alt satira gecebilme:flex-wrap: wrap, nowrap, wrap-reverse*/
+    flex-wrap: wrap;
+  
+    /*! Yatay Hizalama: justify-content
+    /** flex-start, flex-end,center, space-around,space-evenly, space-between*/
+    justify-content: center;
+  
+    /*! Dikey Hizalama => align-items
+    /**  flex-start, flex-end,center, stretch,baseline */
+    align-items: center;
+  
+    /*! Cok satirli verilerin dikeyde hizalanmasi icin kullanilir*/
+    /* align-content: space-between; */
+  
+    /*? Yazilari hizalamak icin*/
+    text-align: center;
+  }
+  
+  ul li {
+    background-color: tomato;
+    padding: 0.5rem;
+    width: 6rem;
+    color: white;
+  }
+  
+  /** FLEX-GROW, FLEX-BASIS */
+  
+  .container {
+    background-color: aquamarine;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .container * {
+    background-color: hotpink;
+  }
+  
+  .container header {
+    /*? Birimli tek bir deger varsa bu flex-basis olcusudur (width/height) */
+    flex-basis: 100%;
+    /* flex:flex grow,flex basis */
+    flex: 1 100%;
+    flex: 100%;
+  }
+  
+  .left {
+    /*! Birimsiz tek deger varsa bu flex-grow degeri olur.
+    /*! Bu durumda flex-basis 0' a esittir */
+    /*? flex-grow: 2,   flex-basis:0 */
+    flex-grow: 2;
+    flex: 2;
+    /* flex:2 0; */
+  }
+  
+  main {
+    flex-grow: 3;
+  }
+  .right {
+    flex-grow: 1;
+  }
+  /* .end{
+      flex-grow: 4;
+  } */
+  
+  .container footer {
+    /*? Birimli tek bir deger varsa bu flex-basis olcusudur (width/height) */
+    flex-basis: 100%;
+  }

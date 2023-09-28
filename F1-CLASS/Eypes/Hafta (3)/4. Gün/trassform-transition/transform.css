@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ******** TRANSFORM-ROTATE ************ */
+/* rotate içinde ... degree (deg) olarak değer verilir */
+/* 90 ve 270 deerelecelerde yazılar tam dik olduklarından ve 
+    3 boyutlu olarak bakamadığımız için gözükmezler */
+
+.yazi{
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 2rem;
+    width: 50vw;
+}
+
+.yazi1{
+    background-color: chocolate;
+    transform: rotateX(120deg);
+}
+.yazi2{
+    background-color: aqua;
+    transform: rotateY(180deg);
+}
+.yazi3{
+    background-color: blueviolet;
+    transform: rotate(30deg);
+    /* transform: rotate(-30deg); */
+    transform-origin: left center;
+} 
+
+/* ******** TRANSFORM-SCALE ************ */
+/* scale boyutlandırma için kullanılır  */
+
+.yazi4{
+background-color: chartreuse;
+transform: scaleX(1.5);
+}
+
+.yazi5{
+    background-color: crimson;
+    transform: scaleY(2);
+}
+
+.yazi6{
+    background-color: darkgray;
+    /* transform: scale(2); */
+}
+.yazi6:hover{
+transform: scale(2) rotate(60deg);
+}
+/* ************* -TRANSFORM- TRANSLATE ********* */
+/* Translate öteleme,hareket ettirmek için kullanılır. */
+
+.box{
+    background-color: crimson;
+    width: 100px;
+    height: 50px;
+    font-weight: 800;
+}
+
+.X{
+    transform: translate(100px);
+}
+
+.Y{
+    transform: translateY(150px);
+}
+.XY{
+ transform: translate(100px,40Px);   
+}
+
+.XY:active{
+    transform: translate(-50px,-100px);
+}
+
+
+.btn-div{
+    text-align: center;
+}
+.btn{
+    background-color: blue;
+    border: 2px solid gray;
+    padding: 20px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    transition: background-color 3s linear 1s,color 1s,border-radius 2s ;
+}
+.btn:hover{
+    background-color: red;
+    width: 200px;
+    color: white;
+    border-radius: 25px;
+}

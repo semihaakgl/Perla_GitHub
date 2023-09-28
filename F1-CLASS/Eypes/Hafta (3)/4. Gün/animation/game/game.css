@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-image{
+    background-image: url(../../images/Img_1.png);
+    height: 700px;
+    width: 80%;
+    background-size: cover;
+    position: relative;
+}
+
+.ground{
+    background-image: url(../../images/Img_02.png);
+    position: absolute;
+    width: 12000px;
+    height: 150px;
+    bottom: 0;
+    left: 0;
+    animation: left-move 8s linear infinite;
+
+}
+
+.car{
+position: absolute;
+bottom: 52px;
+left: 30%;
+animation: hop-up 1s linear infinite;
+}
+@keyframes left-move{
+    100%{transform: translate(-2000px);}
+}
+
+@keyframes hop-up{
+    0%{transform: translateY(-2px);}
+    50%{transform: translateY(0);}
+    100%{transform: translate(2px);}
+}

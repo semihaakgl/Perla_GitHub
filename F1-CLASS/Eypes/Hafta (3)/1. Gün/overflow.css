@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    border: 1px solid red;
+    margin-bottom: 1rem;
+    width: 25rem;
+    height: 8rem;
+}
+.box1{
+    background-color: aquamarine;
+    overflow: auto;
+}
+.box2{
+    background-color: blueviolet;
+    overflow: auto;
+}
+.box3{
+    background-color: blueviolet;
+    overflow: auto;
+}
+.box4{
+    background-color: blueviolet;
+    overflow: auto ;
+}
+p {
+    width: 50rem;
+}

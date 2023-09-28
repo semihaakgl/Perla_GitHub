@@ -1,0 +1,58 @@
+/*? AÇIKLAMA-1 */
+/*! AÇIKLAMA-2 */
+/** AÇIKLAMA-3 */
+/*todo AÇIKLAMA-4 */
+
+*{
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
+.language{
+  list-style-type: square;
+  list-style-position: inside;
+  list-style-image: url(./img/house-solid.svg) ;
+}
+
+.awesome{
+  color: red;
+  font-size: 2rem;
+}
+
+ul.pseudo li{
+  list-style-type: none;
+  background-color: antiquewhite;
+  border: 1px solid grey;
+  width: 10rem;
+}
+
+/*? ul.pseudo li:nico{ */
+  /*? background-color: blue; */
+/*? } */
+
+ul.pseudo li:nth-child(odd){
+  background-color: lightblue;
+}
+
+ul.pseudo li:nth-child(even){
+  background-color: lightgreen;
+}
+
+ul.pseudo li:hover{
+  background-color: pink;
+  cursor: pointer;
+}
+
+ul.pseudo li::before{
+  /*? EMOJI için "WIN LOGO + nokta tuşu"   */
+  content: "😮";
+}
+
+ul.pseudo li::after{
+  content: "💕";
+}
+
+ul.pseudo li::first-letter{
+  font-size: 2rem;
+}

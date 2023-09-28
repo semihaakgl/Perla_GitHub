@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regıster örnek</title>
+    <link rel="stylesheet" href="./register form örnek.css">
+</head>
+<body>
+    <!-- *div açarak altalta gelmesini sağladık -->
+    <!-- *textarea = daha uzun bir yazı yazacağımız için textarea yazdık -->
+    <!-- *select tagı kutucuk oluşturmak için kullanılır. -->
+    <!-- *select ile oluşturduğumuz kutucuk içine seçenek sunmak için kullanılır. -->
+
+    <h1>REGISTER FORM</h1>
+    <form action="">
+        <div> 
+        <label for="firstname">First Name</label>
+        <input type="" id="firstname" name="firstname" placeholder="your first name" required>
+        </div>
+        <label for="secondname">second name</label>
+        <input type="text" id="secondname" name="secondname" placeholder="your second name" required>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="your e-mail" required>
+        </div>
+        <div>
+            <label for="password">pasword</label>
+            <input type="password" id="password" name="password" placeholder="your password" required>
+        </div>
+        <div>
+            <label for="dob">day of birth</label>
+            <input type="date" id="dob" name="dob" min="2020-01-01" max="2024-01-01" placeholder="your birthday" required>
+        </div>
+        <div>
+            <label for="phone">phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="your phone number" required>
+        </div>
+        <div>
+            <label for="address">address</label>
+            <textarea name="address" id="address" cols="20" rows="5" placeholder="your address"></textarea> 
+         </div>   
+        <div>
+            <label for="country">country</label>
+           <select name="country" id="country">
+               <option value="">select country</option>
+               <option value="">Türkiye</option>
+               <option value="">Fransa</option>
+               <option value="">Almanya</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Gender</label>
+            <input type="radio" name="gender"/>
+            <label for="">Male</label>
+            <input type="radio" name="gender">
+            <label for="">Female</label>
+        </div>
+        <div>
+            <label for="">languages</label>
+            <input type="checkbox" name="language">
+            <label for="">Türkçe</label>
+            <input type="checkbox" name="language">
+            <label for="">English</label>
+            <input type="checkbox" name="language">
+            <label for="">Français</label>
+        </div>
+<div>
+    <input type="submit" value="save">
+    <input type="reset" value="clear" name="">
+</div>
+    </form>
+
+</body>
+</html>

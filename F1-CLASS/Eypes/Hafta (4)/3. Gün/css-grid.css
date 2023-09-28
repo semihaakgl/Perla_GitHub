@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+     grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 300px 4rem 400px;
+    grid-template-rows: 50vh 25vh 25vh;
+}
+
+.content{
+    background-color: lightblue;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content7{
+    overflow: auto;
+
+}
+
+.content9{
+    background-image: url(https://cdn.pixabay.com/photo/2023/09/10/05/40/motmot-8244307_640.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
