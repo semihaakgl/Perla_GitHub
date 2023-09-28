@@ -1,0 +1,118 @@
+:root{
+  --red:#dc3545;
+}
+
+
+/*! -------------- 1- NAVBAR ---------------- */
+.navbar-nav{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar .nav-link{
+  transition: color 0.7s ;
+}
+
+.navbar .nav-link:hover{
+color:var(--red)
+}
+
+
+/*! ------------- 2- CAROUSEL --------------- */
+
+.carousel-item{
+  max-height: calc(100vh - 125px);
+}
+
+
+.carousel-caption .btn{
+  width: 7rem;
+}
+
+.carousel-caption h5{
+  color:var(--red);
+  font-size:2.5rem;
+  text-shadow:3px 3px 3px black;
+}
+
+.carousel-caption p{
+  font-weight: 700;
+  text-shadow:3px 3px 3px black;
+}
+.carousel-caption{
+  bottom: 5rem;
+}
+.carousel-indicators button{
+  background-color: var(--red) !important; 
+  /*?bootstrap izin vermedi özel değer vererek ezdik */
+  padding: 0.1rem !important;
+  width: 3rem !important;
+  margin-right: 0.8rem !important;
+}
+
+
+/*! ------------ 3- ABOUT SECTION ----------- */
+
+/*! ------------- 4- INSTRUCTORS -------------*/
+section#instructors div.card{
+transition: transform 1s;
+}
+section#instructors div.card:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+section#instructors i{
+  transition: opacity 1s;
+}
+section#instructors i:hover{
+  opacity: 0.4;
+}
+/*! ----------- 4- STUDENTS SECTION ----------*/
+
+/*! ----------- 5- COURSES SECTION ----------- */
+section#courses .nav-link.active{
+  background-color: var(--red);
+}
+section#courses .nav-link{
+  color: white;
+  font-size: 0.8rem;
+}
+
+/*! ----------- 6- CONTACT SECTION ------------ */
+
+/*! --------------- 7- FOOTER ----------------- */
+
+footer i{
+  color: white;
+  margin-right: 0.8rem;
+  font-size: 2rem;
+  transition: color 1s;
+}
+footer i:hover{
+color: var(--red);
+}
+
+.btn-up{
+position: fixed;
+right: 1rem;
+bottom: 1rem;
+color: #fff;
+background-color: var(--red);
+width: 3rem;
+height: 3rem;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.5rem;
+text-decoration: none;
+}
+.btn-up:hover{
+  color: black;
+}
+
+.btn-up:hover i{
+  transform: scale(1.5);
+  font-size: 1.5rem;
+}
