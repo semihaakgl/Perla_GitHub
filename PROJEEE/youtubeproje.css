@@ -1,0 +1,42 @@
+.navbar-h1{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 60px;
+  color:darkred
+  
+}
+.navbar-h1:hover{
+  cursor:pointer
+}
+
+.nav-item{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  
+}
+.navbar-nav a{
+  color:darkred
+}
+
+.grid-container {
+  display:flex;
+  gap: 50px 50px;
+  grid-template-columns: ;
+  /* background-color: #2196F3; */
+  padding: 50px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+/* .grid-item1{
+  background-color: red;
+  margin: 100px auto;
+} */
+
+.renkcard{
+ 
+}
