@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header img{
+   width: 100vw;
+   height: 50vh;
+}
+
+.main{
+    font-family: 'Hanalei Fill', cursive;
+    text-align: center;
+    text-decoration:underline;
+    color:blue;
+    
+}
