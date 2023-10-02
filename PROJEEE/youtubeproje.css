@@ -13,6 +13,9 @@
   font-size: 30px;
   
 }
+.carousel-item{
+  max-height: calc(100vh - 126px);
+  }
 .navbar-nav a{
   color:darkred
 }
@@ -23,6 +26,12 @@
   grid-template-columns: ;
   /* background-color: #2196F3; */
   padding: 50px;
+  
+}
+.grid-item:hover{
+  transition: transform 1s;
+  transform: scale(2, 3);
+  cursor: pointer;
 }
 
 .grid-item {
@@ -31,12 +40,74 @@
   padding: 20px;
   font-size: 30px;
   text-align: center;
+  
 }
-/* .grid-item1{
-  background-color: red;
-  margin: 100px auto;
-} */
 
-.renkcard{
- 
+
+.teknikimg{
+  border-radius: 10px;
+  box-shadow: 10px 10px  10px ;
+  margin: 30px;
+
 }
+.teknikimgh{
+  font-family: 'Permanent Marker', cursive;
+}
+
+.teknikimg:hover{
+  opacity: 0.5;
+  cursor:pointer;
+  transform: rotate(360deg);
+  transition: ease-in all 1s;
+}
+.teknikbaslik{
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  margin-top: 40px;
+  color: crimson;
+  padding-top: 20px;
+  
+}
+
+.cardbaslik{
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  
+  color: crimson; 
+}
+
+article#card div.card{
+  transition: transform 1s;
+}
+article#card div.card:hover{
+  transform: scale(0.5);
+  cursor: pointer;
+}
+article#card i{
+  transition: opacity 1s;
+}
+article#card i:hover{
+  opacity: 0.4;
+}
+
+
+
+
+.footer{
+  text-align: center;
+  background-color:cadetblue;
+  padding: 1rem;
+  margin: 20px;
+
+}
+
+.footer i{
+  margin: 5px;
+  margin-bottom: 30px;
+}
+.footer i:hover{
+  color: darkred;
+}
+
