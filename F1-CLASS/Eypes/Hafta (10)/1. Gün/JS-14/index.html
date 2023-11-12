@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>JS14 - Events</title>
+    <style>
+      .large {
+        color: aquamarine;
+        transform: scale(1.3);
+        transform-origin: 0 0;
+        transition: transform 0.6s;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <h1>EVENTS</h1>
+    </header>
+    <main>
+      <section class="add-item">
+        <h2>ADD NEW ITEM</h2>
+        <input id="input" type="text" />
+        <input id="btn" type="button" value="ADD" />
+      </section>
+      <section class="item-list">
+        <h2 id="sec">ITEM LIST</h2>
+        <ul>
+          <li class="list">HTML</li>
+          <li class="list">
+            CSS <span style="display: none">- Cascade Style Sheet</span>
+          </li>
+          <li id="js" class="list">Javascript</li>
+          <li id="react" class="list">React</li>
+          <li id="django" class="list">Django</li>
+        </ul>
+      </section>
+      <br />
+      <br /><br /><br />
+
+      <div
+        id="scroll-box"
+        style="overflow: scroll; height: 100px; width: 100px; float: left"
+      >
+        <p style="height: 200px; width: 200px">Scroll me!</p>
+      </div>
+      <p style="text-align: center" id="output">Waiting on scroll events...</p>
+      <br /><br /><br /><br /><br /><br />
+      <div>
+        <input id="sel" value="Try selecting some text in this element." />
+        <p id="log"></p>
+      </div>
+
+      <form id="form">
+        <label>
+          Some text:
+          <input type="number" placeholder="text input" />
+        </label>
+        <label>
+          Password:
+          <input type="password" placeholder="password" />
+        </label>
+      </form>
+    </main>
+
+    <script src="events.js"></script>
+  </body>
+</html>
