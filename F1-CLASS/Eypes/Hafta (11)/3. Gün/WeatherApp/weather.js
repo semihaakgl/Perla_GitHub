@@ -9,10 +9,13 @@ localStorage.setItem(
 );
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault();  //?  sayfanın yeniden yüklenmesini engelliyoruz.
+  e.preventDefault();  //?  sayfanın yeniden yüklenmesini engelliyoruz. yaptığımız işlemin silinmemesi için yani.
   // console.log("form")
   getWeatherDataFromApi();  //? api den veri çekme fonksiyonu
-  form.reset();
+  form.reset(); //? butonun içine yazdığımız yazının işimiz bittikten sonra silinmesini sağlar. diğer seçenekler:
+  //? input.value = "";
+  //? target vs. currentTarget
+  //? e.currentTarget.reset(); diğer resetleme seçenekleri
 });
 
 const getWeatherDataFromApi = async () => {
